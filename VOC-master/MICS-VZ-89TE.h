@@ -55,15 +55,15 @@ public:
     float rev;
     float crc;
     
-    bool begin(void);
+    void begin(void);
     void readSensor(void);
     void getVersion(void);
+    uint8_t   _i2caddr;
+    void readData(byte reg, uint8_t data[]);
     
     
 private:
     
-    uint8_t   _i2caddr;
-    void readData(byte reg, uint8_t data[]);
 
 };
 

@@ -4,6 +4,7 @@ MICS_VZ_89TE test;
 
 void setup(){
   // put your setup code here, to run once:
+  Serial.begin(9600);
   test.begin();
 }
 
